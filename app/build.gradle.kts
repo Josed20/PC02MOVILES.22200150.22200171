@@ -50,11 +50,14 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
-    implementation(libs.firebase_auth)
-    implementation(libs.androidx_credentials)
-    implementation(libs.androidx_credentials_play_services_auth)
-    implementation(libs.google_id)
-    implementation(libs.firebase_firestore)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.coil.compose)
+    implementation(libs.kotlinx.coroutines.play.services)
+    implementation(libs.firebase.auth)
+    implementation(libs.androidx.credentials)
+    implementation(libs.androidx.credentials.play.services.auth)
+    implementation(libs.google.id)
+    implementation(libs.firebase.firestore)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -62,8 +65,8 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
-
+    
     // Firebase BOM y Analytics
-    implementation(platform(libs.firebase_bom))
-    implementation(libs.firebase_analytics)
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.analytics)
 }
